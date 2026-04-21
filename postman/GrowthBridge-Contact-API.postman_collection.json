@@ -1,0 +1,33 @@
+{
+  "info": {
+    "name": "GrowthBridge Contact API",
+    "description": "POSTMAN collection for testing the GrowthBridge static site contact endpoint.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Submit Contact Form",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Alex Morgan\",\n  \"email\": \"alex@growthstart.io\",\n  \"company\": \"GrowthStart\",\n  \"message\": \"We need better lead generation and reporting clarity across our campaigns.\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/contact",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "contact"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
